@@ -1,0 +1,207 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>hm16 : CSS3 advanced</title>
+		<style>
+			#fixed {
+				position: fixed;
+				top: 70px;
+				left: 10px;
+				width: 100px;
+				padding: 5px;
+				background: red;
+				color: white;
+			}
+			#fixed2 {
+				position: absolute;
+				top: 550px;
+				left: 440px;
+				width: 100px;
+				padding: 5px;
+				background: yellow;
+				color: black;
+			}
+			div {
+				display: inline-block;
+				position: absolute;
+				border: 2px solid lightgray;
+			}
+			div > p {
+				display: inline-block;
+				position: absolute;
+				height: 22px;
+				width: 0px;
+				background: lightgray;
+			}
+			div {
+				position: absolute;
+			}
+			img {
+				position: absolute;
+			}
+			#background {
+			z-index: -5;
+				left: 0px;
+				top: 0px;
+			}
+			#bax1 {
+			z-index: -5;
+				left: 160px;
+				top: 466px;
+			}
+			#bax2 {
+			z-index: -5;
+				left: 216px;
+				top: 486px;
+			}
+			#bell1 {
+				z-index: -5;
+				left: 100px;
+				top: 100px;
+			}
+			#bell2 {
+				z-index: -5;
+				left: 450px;
+				top: 100px;
+			}
+			#couple {
+				z-index: -3;
+				left: 285px;
+				top: 80px;
+			}
+			#deco1 {
+				z-index: -3;
+				left: 242px;
+				top: 180px;
+			}
+			#deco2 {
+				z-index: -3;
+				left: 269px;
+				top: 340px;
+			}
+			#deco3 {
+				z-index: -3;
+				left: 370px;
+				top: 330px;
+			}
+			#deco4 {
+				z-index: -3;
+				left: 190px;
+				top: 330px;
+			}
+			#house {
+				z-index: -4;
+				left: 470px;
+				top: 240px;
+			}
+			#rudolf {
+				z-index: -4;
+				left: 80px;
+				top: 240px;
+			}
+			#santa {
+				z-index: -4;
+				left: 70px;
+				top: 420px;
+			}
+			#snowman {
+				z-index: -4;
+				left: 460px;
+				top: 420px;
+			}
+			#tree {
+				z-index: -4;
+				left: 145px;
+				top: 160px;
+			}
+			audio{
+				position: absolute;
+				left: 80px;
+				top: 555px;
+				width: 350px;
+    			height: 26px;
+			}
+			span {
+				transition : font-size 6s;
+			}
+			span:hover {
+				font-size: 666%;
+			}
+		</style>
+		<script></script>
+	</head>
+
+	<body>
+		<h3>Merry Christmas!</h3>
+		<hr>
+		<div>
+			<img id="background"src="media/background.png"
+			width="666" height="666" alt="크리스마스 배경">
+			<img id="bax1"src="media/bax.png" 
+			width="52" height="50" alt="크리스마스 상자1">
+			<img id="bax2"src="media/bax.png" 
+			width="26" height="26" alt="크리스마스 상자2">
+			<img id="bell1"src="media/bell.png" 
+			width="100" height="100" alt="크리스마스 종1">
+			<img id="bell2"src="media/bell.png" 
+			width="100" height="100" alt="크리스마스 종2">
+			<img id="couple"src="media/couple.png" 
+			width="66" height="62" alt="크리스마스 연인">
+			<img id="deco1"src="media/deco1.png" 
+			width="150" height="150" alt="크리스마스 장식1">
+			<img id="deco2"src="media/deco2.png" 
+			width="100" height="100" alt="크리스마스 장식2">
+			<img id="deco3"src="media/deco3.png" 
+			width="100" height="100" alt="크리스마스 장식3">
+			<img id="deco4"src="media/deco3.png" 
+			width="100" height="100" alt="크리스마스 장식4">
+			<img id="house"src="media/house.png" 
+			width="100" height="100" alt="크리스마스 집">
+			<img id="rudolf"src="media/rudolf.png" 
+			width="100" height="100" alt="크리스마스 루돌프">
+			<img id="santa"src="media/santa.png" 
+			width="100" height="100" alt="크리스마스 산타">
+			<img id="snowman"src="media/snowman.png" 
+			width="100" height="100" alt="크리스마스 눈사람">
+			<img id="tree" src="media/tree.png" 
+			width="350" height="320" alt="크리스마스 트리">
+
+			<audio src="media/JingleBells.mp3" controls autoplay>
+			</audio>
+
+			<p style="left:80px; top:500px; color:chocolate">
+				<span>M</span>
+			</p>
+			<p style="left:130px; top:500px; color:chocolate">
+				<span>E</span>
+			</p>
+			<p style="left:180px; top:500px; color:chocolate">
+				<span>R</span>
+			</p>
+			<p style="left:230px; top:500px; color:chocolate">
+				<span>R</span>
+			</p>
+			<p style="left:280px; top:500px; color:chocolate">
+				<span>Y</span>
+			</p>
+			<p style="left:350px; top:500px; color:crimson">
+				<span>X</span>
+			</p>
+			<p style="left:400px; top:500px; color:crimson">
+				<span>-</span>
+			</p>
+			<p style="left:450px; top:500px; color:crimson">
+				<span>M</span>
+			</p>
+			<p style="left:500px; top:500px; color:crimson">
+				<span>A</span>
+			</p>
+			<p style="left:550px; top:500px; color:crimson">
+				<span>X</span>
+			</p>
+			<div id="fixed2">
+			HM16 고태승
+		</div>
+	</body>
+</html>
+
