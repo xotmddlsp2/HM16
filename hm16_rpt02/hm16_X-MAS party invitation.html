@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>hm18 : CSS3 advanced</title>
+		<style>
+            input[type=text] {
+			    color: black;
+			}
+			input:hover, textarea:hover {
+			    background: aliceblue;
+			}
+			input[type=text]:focus, input[type=tel]:focus {
+			    font-size:160% ;
+			}
+			input[type=password]:focus {
+			    font-size:100% ;
+			}
+			label {
+				display: block; 
+				padding: 10px;
+			}
+			label span {
+				float: left;
+				width: 100px;
+				text-align:left ;
+				padding: 10px;
+			}
+			div {
+				display: inline-block;
+				position:absolute;
+				border: 1px solid lightgray;
+			}
+            img {
+                position: absolute;
+                left:680px;
+                top:13px;
+            }
+		</style>
+	</head>
+
+	<body>
+		<p>크리스마스 파티 초대장 양식</p>
+        <form>
+            <hr> 
+			<label><span>이 름</span>
+				<input type="text" placeholder="ex)홍길동">
+			</label>
+            <br>
+			<label><span>전 화 번 호</span>
+				<input type="tel" placeholder="ex)010-xxxx-xxxx">
+			</label>
+            <br>
+			<label><span>생 년 월 일</span>
+				<input type="text" placeholder="ex)주민등록번호 앞자리">
+			</label>
+			<br>
+			<label><span>비 밀 번 호</span>
+				<input type="password" placeholder="초대장이 없으신 분들만 !!">
+			</label>
+			<br>
+			<label><span></span>
+				<input type="submit" value="제출하기">
+			</label>
+            </form>
+		<hr>
+         <div>
+				<img src="media/X-MAS Card.png"
+				width="256" height="256" alt="크리스마스 카드">
+        </div>
+		<a style="position: absolute; top:420px;">1. 오른쪽에 보이는 사진과 같은 초대장을 받으신 분들만 파티에 참석 가능합니다.<br>
+			<br><br><br>
+		   2. 초대장을 받지 못하였지만 사전에 연락 받으신 분들은 비밀번호를 입력하여 주시면<br>
+		    　저희가 확인 후 다시 연락 드리겠습니다. 심려를 끼쳐드려 대단히 죄송합니다.
+		   <br><br><br><br>
+		   3. 추가로 문의사항이 있으신 분들은 010-8863-9925로 문의 해주시면 됩니다. ^^
+		</a>
+    </body>
+	
