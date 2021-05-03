@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>hm16 : Javascript calculator</title>
+    <style></style>
+    <script>
+      function calc_add() {
+        // 덧셈 (add) [+]
+        var x = document.getElementById("x").value;
+        var y = document.getElementById("y").value;
+        var result;
+        result = parseInt(x) + parseInt(y);
+        document.getElementById("result").value = result;
+      }
+      function calc_sub() {
+        // 뺄셈 (subtract) [-]
+        var x = document.getElementById("x").value;
+        var y = document.getElementById("y").value;
+        var result;
+        result = parseInt(x) - parseInt(y);
+        document.getElementById("result").value = result;
+      }
+      function calc_multiply() {
+        //곱셈 (multiply) [*]
+        var x = document.getElementById("x").value;
+        var y = document.getElementById("y").value;
+        var result;
+        result = parseInt(x) * parseInt(y);
+        document.getElementById("result").value = result;
+      }
+      function calc_divide() {
+        //나눗셈 (divide) [/]
+        var x = document.getElementById("x").value;
+        var y = document.getElementById("y").value;
+        var result;
+        result = parseInt(x) / parseInt(y);
+        document.getElementById("result").value = result;
+      }
+      function calc_mod() {
+        //나머지 (mod) [%]
+        var x = document.getElementById("x").value;
+        var y = document.getElementById("y").value;
+        var result;
+        result = parseInt(x) % parseInt(y);
+        document.getElementById("result").value = result;
+      }
+    </script>
+  </head>
+
+  <body>
+    <h3>JS App: Simple calculator</h3>
+    <hr>
+    <h3>간단한 계산기</h3>
+    <form name="myform" action="..." method="post">
+      첫번째 정수:
+      <input id="x" />
+      <br>
+      두번째 정수:
+      <input id="y" />
+      <br>
+      계산결과:
+      <input id="result" />
+      <br />
+      <input type="button" value="+" onclick="calc_add();" />
+      <input type="button" value="-" onclick="calc_sub();" />
+      <input type="button" value="*" onclick="calc_mul();" />
+      <input type="button" value="/" onclick="calc_div();" />
+      <input type="button" value="%" onclick="calc_mod();" />
+    </form>
+  </body>
+</html>
