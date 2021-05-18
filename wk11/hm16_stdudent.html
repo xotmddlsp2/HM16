@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>hm16 : Javascript object</title>
+    <style></style>
+    <script>
+      var now = new Date();
+      var student = {
+        ID: "hm16",
+        Name: "고태승",
+        Age: function() {
+          return now.getFullYear() - this.BrithYear + 1;
+        },
+        PhoneNumber: "010-8863-9925",
+        BrithYear: 1999,
+        BrithMonth: 7,
+        BrithDay: 29
+      };
+    </script>
+  </head>
+
+  <body>
+    <h3>리터럴 표기 방식으로 student 객체를 만들고 그 객체의 내용 출력하기</h3>
+    <hr>
+    <script>
+      document.write("ID : " + student.ID + "<br>");
+      document.write("Name : " + student.Name + "<br>");
+      document.write("Age : " + student.Age() + "<br>");
+      document.write("PhoneNumber : " + student.PhoneNumber + "<br>");
+      document.write(
+        "Birthday : " +
+          student.BrithYear +
+          ".0" +
+          student.BrithMonth +
+          "." +
+          student.BrithDay +
+          ""
+      );
+    </script>
+  </body>
