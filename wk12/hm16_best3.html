@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>hm16 : Javascript BOM</title>
+    <style></style>
+
+    <script>
+      function load() {
+        var select = document.getElementById("site");
+        window.location = select.options[select.selectedIndex].value;
+      }
+    </script>
+  </head>
+  <body>
+    <h3>hm16 favorite 3 Movie</h3>
+    <hr>
+    각 영화에 대한 정보
+    <select id="site">
+      <option> 선택하세요 </option>
+      <option
+        value="https://movie.naver.com/movie/bi/mi/basic.nhn?code=159830">
+        너의 췌장을 먹고싶어</option>
+      <option
+        value="https://movie.naver.com/movie/bi/mi/basic.nhn?code=168298" >
+        지금 만나러 갑니다</option>
+      <option
+        value="https://movie.naver.com/movie/bi/mi/basic.nhn?code=167638" >
+        완벽한 타인</option>
+    </select>
+    <p>
+      <button onclick="load()">웹 사이트 접속</button>
+    </p>
+  </body>
+</html>
