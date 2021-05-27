@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>hm16 : Javascript Event</title>
+    <style>
+        img{
+            width: 265px;
+            height: 265px;
+        }
+    </style>
+    <script>
+      var files = [
+        "media/LeagueofLegends.png",
+        "media/SuddenAttack.png",
+        "media/OverWatch.png",
+        "media/MapleStory.png",
+        "media/BattleGrounds.png"
+        
+        
+      ];
+      var imgs = new Array();
+      for (var i = 0; i < files.length; i++) {
+        imgs[i] = new Image();
+        imgs[i].src = files[i];
+      }
+      var next = 1;
+      function change(img) {
+        img.src = imgs[next].src;
+        var nameSplit = files[next].split('/');
+        var nameText = document.getElementById("name");
+        var sizeText = document.getElementById("size");
+        nameText.innerHTML = "이미지 이름: " + nameSplit[1];
+        sizeText.innerHTML = "폭: " + img.width + " 높이: " + img.height;
+        next++;
+        next %= imgs.length;
+      }
+      function init(img){
+        var nameSplit = files[next-1].split('/');
+        var nameText = document.getElementById("name");
+        var sizeText = document.getElementById("size");
+        img.src = files[next-1];
+        nameText.innerHTML = "이미지 이름: " +nameSplit[1];
+        sizeText.innerHTML = "폭: "+ img.width +" 높이: " + img.height;
+      }
+    </script>
+  </head>
+
+  <body>
+    <h3>내가 좋아하는 게임 5가지</h3>
+    <hr />
+    이미지를 클릭하면 다음 이미지와 정보를 보여줍니다.
+    <p>
+            <img
+            style="border:20px ridge rgb(120, 179, 245)"
+            src="media/LeagueofLegends.png"
+            alt="."
+            width=""
+            height=""
+            onclick="change(this)"
+            onload="init(this)"      
+          />
+          <p id="name"></p>
+          <p id="size"></p>  
+    </p>
+  </body>
+</html>
